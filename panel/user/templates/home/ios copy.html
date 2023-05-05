@@ -1,0 +1,137 @@
+
+<div class="col">
+    <div class="card card-info collapsed-card card-outline">
+      <div class="card-header">
+        <h3 class="card-title" data-widget="collapse">
+<button class='btn btn-sm btn-default' onclick='show_video(\"ios-stash\")'><i class=\"fa-solid fa-question\"></i>Stash</button>
+<button class='btn btn-sm btn-default' onclick='show_video(\"ios-shadowrocket\")'><i class=\"fa-solid fa-question\"></i> Shadowrocket</button>
+<span class=\"badge badge-success\">Recomendado</span>
+        </h3>
+
+        <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+          </button>
+        </div>
+        <!-- /.card-tools -->
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body">
+  Stash & Shadowrocket é um ótimo aplicativo. Achamos que vale a pena comprá-lo.
+<br>
+<div class=\"btn-group\">\n"
+<a href=\"https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349\" target=\"_blank\" class=\"btn btn-success orig-link \">Faça o download do Stash</a>
+</div>
+<div class=\"btn-group\">
+<a href=\"https://apps.apple.com/us/app/shadowrocket/id932747118\" target=\"_blank\" class=\"btn btn-primary orig-link\">Faça o download do Shadowrocket </a>
+</div><br>
+      </div>   <div class="btn-group">
+        <a href="https://apps.ap0ple.com/us/app/stash-rule-based-proxy/id1596063349" target="_blank" class="btn btn-success orig-link"></a></a>
+        </div>
+        {% include "home/clash-links.html" %}
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+  </div>
+  <!-- /.col -->
+
+
+  <div class="col">
+    <div class="card card-info collapsed-card card-outline">
+      <div class="card-header">
+        <h3 class="card-title" data-widget="collapse">
+            shadowlink
+        </h3>
+
+        <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+          </button>
+        </div>
+        <!-- /.card-tools -->
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body">
+        
+        <div class="btn-group">
+            <a href="https://apps.apple.com/us/app/shadowlink-shadowsocks-vpn/id1439686518"
+                class="btn btn-primary orig-link"> shadow link</a> 
+        </div>
+        
+        <br>
+        <br>
+        
+        % for type in link_maker.all_proxies()
+        {% set pinfo=link_maker.proxy_info(type) %}
+        % if pinfo!=None
+        <div class="btn-group"><a href='{{pinfo["url"]}}' class="btn btn-primary orig-link">{{type}}</a></div>
+        % endif
+        % endfor
+
+
+
+        <figure class="figure d-block text-center p-3">
+            <img src="images/ios_shadow.gif" alt="How to use v2 ray for iOS"
+                class="figure-img img-fluid rounded" />
+            <figcaption class="figure-caption">
+                <p>Como usar o clash para iOS</p>
+            </figcaption>
+        </figure>
+
+
+    
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+  </div>
+  <!-- /.col -->
+
+
+  <div class="col">
+    <div class="card card-info collapsed-card card-outline">
+      <div class="card-header">
+        <h3 class="card-title" data-widget="collapse">
+            نرم افزار napsternetv و fair vpn
+        </h3>
+
+        <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+          </button>
+        </div>
+        <!-- /.card-tools -->
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body">
+        ابتدا 
+        
+        <div class="btn-group">
+            <a href="https://apps.apple.com/us/app/napsternetv/id1629465476"
+                class="btn btn-primary orig-link"> برنامه  napsternetv</a>
+
+        </div>
+        یا 
+        <div class="btn-group">
+            <a href="https://apps.apple.com/us/app/fair-vpn/id1533873488"
+                class="btn btn-primary orig-link"> برنامه  fair-vpn</a>
+
+        </div>
+        را نصب کنید
+        <br />
+        سپس کانفیگ مورد نظر خود را اعمال کنید:
+        <br />
+        % for type in link_maker.all_proxies()
+        {% set pinfo=link_maker.proxy_info(type) %}
+        % if pinfo!=None
+        <div class="btn-group"><a href='{{pinfo["url"]}}' class="btn btn-primary orig-link">{{type}}</a></div>
+        % endif
+        % endfor
+
+
+
+    
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+  </div>
+  <!-- /.col -->

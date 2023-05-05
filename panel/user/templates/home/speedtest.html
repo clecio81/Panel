@@ -1,0 +1,14 @@
+Primeiro, teste a velocidade <b>sem</b> o proxy. Se a velocidade não for boa, significa que esse ip é chamado de sujo no seu ISP.
+Se a velocidade estava baixa sem proxy, não perca tempo testando este proxy.
+Caso contrário, teste com diferentes proxies deste site e se a velocidade for semelhante à velocidade sem o proxy, você encontrou o melhor protocolo.
+<br />
+<div class="btn-group">
+    <a href="/{{hconfigs[ConfigEnum.proxy_path]}}/speedtest/?test=upload" class="btn btn-success">
+        {{_("user.home.speedtest.upload")}}</a>
+    <a href="/{{hconfigs[ConfigEnum.proxy_path]}}/speedtest/?test=download" class="btn btn-secondary">
+        {{_("user.home.speedtest.download")}}</a>
+    <a href="/{{hconfigs[ConfigEnum.proxy_path]}}/speedtest/?run" class="btn btn-primary">
+        Verificação completa</a>
+</div>
+<br/>
+IP: {{ip_debug}}
